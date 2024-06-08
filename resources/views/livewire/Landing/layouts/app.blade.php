@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/d508f9c7b5.js" crossorigin="anonymous"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100">
+    <div class="min-h-screen bg-gray-100 flex flex-col">
         <livewire:Landing.layouts.nav />
 
         <!-- Page Heading -->
@@ -27,9 +28,15 @@
         @endif
 
         <!-- Page Content -->
-        <main>
+        <main class="flex-grow">
             {{ $slot }}
         </main>
+
+        <footer id="contact" class="bg-pink-500 text-white py-4 mt-10">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

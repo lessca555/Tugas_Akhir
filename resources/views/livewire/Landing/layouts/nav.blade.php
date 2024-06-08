@@ -7,16 +7,18 @@
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('products') }}">Product</a></li>
-                <li><a href="{{ route('about') }}">About</a></li>
+                <li><a href="{{ route('about') }}">About us</a></li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
         </div>
-        <a class="btn btn-ghost text-xl">NN Djaya Snack</a>
+        <a href="{{ route('home') }}" class="btn btn-ghost text-xl">NN Djaya Snack</a>
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
             <li><a href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('products') }}">Product</a></li>
-            <li><a href="{{ route('about') }}">About</a></li>
+            <li><a href="{{ route('about') }}">About us</a></li>
+            <li><a href="#contact">Contact us</a></li>
         </ul>
     </div>
     <div class="navbar-end">
