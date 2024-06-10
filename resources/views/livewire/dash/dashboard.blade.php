@@ -1,8 +1,8 @@
-<div class="flex flex-col justify-center items-center">
+<div class="flex">
 
     @role('admin')
-    <div class="bg-white p-5 h-[100vh]">
-        <h1>admin</h1>
+    <div class="bg-white">
+
     </div>
     @elserole('user')
     <div>
